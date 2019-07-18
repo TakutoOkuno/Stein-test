@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stein Test</title>
+  <style type="text/css">
+    <!-- 
+      div.inner {
+                 height: 440px;
+                 width: 660px;
+                 border: solid 4px;
+                 border-color: black;
+                 border-radius: 4px;
+                 background-color: white;
+                 position: relative;
+                 margin: 0 auto;
+                }
+      h4, p     {    
+                 display: block;
+                 text-align: center;
+                }
+      h4        {
+                 margin-top: 140px;
+                }
+     -->
+  </style>
+</head>
+<body>
+  <div data-stein-url="https://api.steinhq.com/v1/storages/5d308078490adc53ef5c2eb1/profile" class="inner">
+    <h4>{{firstName}}{{lastName}}'s profile</h4>
+    <p>occupation:  {{occupation}}</p>
+    <p>age: {{age}}</p>
+    <p>skill: {{skill}}</p>
+  </div>
+<script src="https://unpkg.com/stein-expedite@0.0.1/dist/index.js"></script>
+</body>
+</html>
